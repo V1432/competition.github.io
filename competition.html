@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karaoke Competition — Three Studios</title>
+    <link rel="stylesheet" href="./karaoke.css">
+</head>
+<body>
+    <div class="page">
+        <header class="hero">
+            <div class="hero-inner">
+                <img src="./dummy-logo-3.png" alt="Karaoke Competition Logo" class="hero-logo">
+                <div class="hero-content">
+                    <h1>🎤 Karaoke Competition</h1>
+                    <p>Three studios collaborating to bring you an unforgettable karaoke showdown.</p>
+                    <div class="controls">
+                        <button id="audioToggle" class="control-btn">▶ Play Music</button>
+                        <button id="muteToggle" class="control-btn">🔊 Unmute</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="studios">
+                <article class="studio">
+                    <div class="studio-logo">🎵</div>
+                    <h3>RoofLight Studios</h3>
+                    <p>Vocal coaching & live stage experience.</p>
+                    <button class="join-btn">Partner</button>
+                </article>
+
+                <article class="studio">
+                    <div class="studio-logo">🎶</div>
+                    <h3>KV Studios</h3>
+                    <p>Song arrangement & backing tracks.</p>
+                    <button class="join-btn">Partner</button>
+                </article>
+
+                <article class="studio">
+                    <div class="studio-logo">🎬</div>
+                    <h3>Damini Studios</h3>
+                    <p>Event production & prizes.</p>
+                    <button class="join-btn">Partner</button>
+                </article>
+            </section>
+
+            <section class="info">
+                <h2>About Competition</h2>
+                <ol>
+                    <li>Participants sign up with one of the studios.</li>
+                    <li>Each round is judged by a combined panel.</li>
+                    <li>Winners get studio sessions and prizes.</li>
+                </ol>
+            </section>
+        </main>
+
+        <footer class="footer">Presented by RoofLight Studios | KV Studios | Damini Studios</footer>
+
+        <!-- Audio: updated to use the local MP3 present in the `nlp/` folder. -->
+        <audio id="bgAudio" src="Goom Hai Kisi Ke Pyar Mein Inst.-320kbps.mp3" preload="auto"></audio>
+        <script src="./karaoke.js"></script>
+    </div>
+</body>
+</html>
